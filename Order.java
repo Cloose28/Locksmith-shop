@@ -41,7 +41,7 @@ public class Order {
     /** True if the search for defects*/
     private boolean isSearchForDefects;
 
-    
+
 
 
 

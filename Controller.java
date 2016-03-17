@@ -12,29 +12,28 @@ import java.util.function.Function;
 public class Controller {
     /** */
     private List<Order> orderList = new ArrayList<>();
-    private List<Service> serviceList = new ArrayList<>();
 
     public Controller() {
-        orderList = getListFromFile("orders.txt",
-                Order::fromString);
-        serviceList = getListFromFile("service.txt",
-                (Service::fromString));
+//        orderList = getListFromFile("orders.txt",
+//                Order::fromString);
+//        serviceList = getListFromFile("service.txt",
+//                (Service::fromString));
+//
+//        orderList.stream().forEach(System.out::println);
+//        orderList.stream().filter((Order order) -> order.getName().equals("Вася")).forEach(System.out::println);
+//        orderList.stream()
+//                .filter((Order order) -> order.getName().equals("Вася"))
+//                .map(Order::getName)
+//                .forEach(System.out::println);
+//    }
 
-        orderList.stream().forEach(System.out::println);
-        orderList.stream().filter((Order order) -> order.getName().equals("Вася")).forEach(System.out::println);
-        orderList.stream()
-                .filter((Order order) -> order.getName().equals("Вася"))
-                .map(Order::getName)
-                .forEach(System.out::println);
-    }
-
-    private <T> List<T> getListFromFile(String fileName, Function<String, T> createObjectFromString) {
-        ArrayList<T> list = new ArrayList<>();
-
-        list.add(createObjectFromString.apply("asdfand"));
-
-        return list;
-    }
+//    private <T> List<T> getListFromFile(String fileName, Function<String, T> createObjectFromString) {
+//        ArrayList<T> list = new ArrayList<>();
+//
+//        list.add(createObjectFromString.apply("asdfand"));
+//
+//        return list;
+//    }
 
 //    private <T> List<T> getListFromFile(String fileName) {
 //        ArrayList<T> list = new ArrayList<>();
@@ -49,5 +48,5 @@ public class Controller {
 //
 //        }
 //        return false;
-//    }
+    }
 }
